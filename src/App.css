@@ -1,0 +1,139 @@
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.images {
+  margin-bottom: 30px;
+}
+
+.gallery .images {
+  margin-top: 30px;
+  margin-left: 13%;
+  margin-right: 13%;
+  gap: 15px;
+  columns: 4 320px;
+}
+.images img {
+  width: 100%;
+  height: fit-content;
+  cursor: pointer;
+}
+
+.close {
+  border: none;
+  background: none;
+  float: right;
+}
+.searchV {
+  border: none;
+  background: none;
+  width: 45px;
+  height: 45px;
+  font-size: 25px;
+  color: white;
+}
+.searchV:hover {
+  transform: scale(1.1);
+  color: green;
+}
+.images .card .ditails {
+  position: absolute;
+  bottom: 0;
+  display: none;
+  width: 100%;
+  padding: 15px 20px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  color: white;
+  transition: bottom 0.1s ease;
+}
+.card {
+  margin-bottom: 10px;
+}
+.images .card:hover .ditails {
+  display: block;
+}
+.error {
+  height: 100%;
+}
+.lightbox {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  background: rgba(0, 0, 0, 0.65);
+}
+.lightbox .wrapper {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: fit-content;
+  padding: 20px;
+  /* max-width: 1050px; */
+  background: #fff;
+  border-radius: 5px;
+  transform: translate(-50%, -50%);
+}
+.wrapper header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.close i {
+  margin-right: 10px;
+  font-size: 25px;
+}
+.close:hover {
+  transform: scale(1.1);
+  color: red;
+}
+.preview-img {
+  display: flex;
+}
+.wrapper .preview-img .img {
+  height: 65vh;
+  padding: 20px;
+  /* margin-left: 10px;
+  max-height: 65vh;
+  max-width: 90vh; */
+}
+.preview-img .img img {
+  height: 100%;
+  object-fit: contain;
+  border-radius: 5px;
+  box-shadow: 2px 2px 8px 8px #a2a2a2;
+}
+.info {
+  display: grid;
+  width: 180px;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.downloadImge {
+  width: 150px;
+  margin-left: 20px;
+  border: none;
+  background: none;
+  font-size: 18px;
+  color: blue;
+  text-align: left;
+}
+.downloadImge:focus {
+  color: red;
+}
+.downloadImge .bi {
+  margin-left: 10px;
+}
+
+.downLink {
+  margin-top: 15px;
+  text-align: left;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+.imgPhotographer {
+  font-weight: bold;
+}
